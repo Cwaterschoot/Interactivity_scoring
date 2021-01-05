@@ -48,5 +48,5 @@ Defaults:
 
 #### Output:
 * Output.xlsx: a file containing all the created variables and outcomes
-* Written output containing the valuable replies and their argument categories
+* Written output containing the valuable replies and their argument categories, the final TIS and individual message contributions.
 * Scatterplots (Plot1 & Plot2) to visualize TIS and MIS (Plot 1) and dynamic echo/opposition scores (Plot 2)
