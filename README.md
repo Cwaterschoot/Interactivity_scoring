@@ -65,7 +65,8 @@ This thread is fairly balanced.
 ****************************************************************************************************
 The closer the individual score to 0, the smaller the interactive contribution that the message makes. 
 
-individual interactivity contributions 
+Individual interactivity contributions:
+
  [0, 0.5, 0.33333333333333326, -0.25, -0.13979400086720378, -0.16666666666666669, -0.14285714285714285, -0.08737125054200236, 0.11111111111111112, -0.06989700043360189, -0.047534431389121605, -0.08333333333333333, -0.030610769897849048, 0.0499264288811442, 0.034858583018689174, 0.024871250542002357, -0.03700429434720099, -0.02614393726401688, -0.01884978988446494, 0.034948500216800946, 0.024898987870492266, 0.01808818221236535]
 ****************************************************************************************************
 Messages receiving an individual score with a greater distance from 0 compared to the previous reply are deemed valuable interaction. 
