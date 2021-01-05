@@ -6,9 +6,7 @@ Interactivity.py calculates the following indicators:
 
 Individual messages will receive an interactivity score representing the extent that this message at the time of posting contributed to the overall thread score. Simply put, it is the difference between the thread score before the individual message was added and after. Subsequent identical arguments are downgraded by the individual log operator, which decreases the more an already presented argument is added. 
 
-> With z being the number of arguments at argument x_{i}
 
-> <img src="https://latex.codecogs.com/gif.latex?MIC(x_{i})=\frac{(1-log(x_{i}))}{z}" />
 
 #### 2) Thread Interactivity Score
 
