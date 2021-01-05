@@ -51,9 +51,10 @@ Defaults:
 * Written output containing the valuable replies and their argument categories, the final TIS and individual message contributions.
 * Scatterplots (Plot1 & Plot2) to visualize TIS and MIS (Plot 1) and dynamic echo/opposition scores (Plot 2)
 
+
+###### Example output:
 <blockquote>
- ###### Example:
-  
+
 Echo score = 1.0954316545944391
   
 Opposite score = 0.8290717052989449
