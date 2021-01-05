@@ -52,9 +52,13 @@ Defaults:
 * Scatterplots (Plot1 & Plot2) to visualize TIS and MIS (Plot 1) and dynamic echo/opposition scores (Plot 2)
 
 <blockquote>
-  echo score = 1.0954316545944391
-opposite score = 0.8290717052989449
-full thread interactivity score = -0.2663599492954942 
+ ###### Example:
+  
+Echo score = 1.0954316545944391
+  
+Opposite score = 0.8290717052989449
+
+Full thread interactivity score = -0.2663599492954942 
 
 This thread is fairly balanced.
 ****************************************************************************************************
