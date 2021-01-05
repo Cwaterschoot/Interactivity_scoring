@@ -8,7 +8,7 @@ Interactivity.py calculates the following indicators:
 
 Individual messages will receive an interactivity score representing the extent that this message at the time of posting contributed to the overall thread score. Simply put, it is the difference between the thread score before the individual message was added and after. Subsequent identical arguments are downgraded by the individual log operator, which decreases the more an already presented argument is added. 
 
-> MIC(X) = (1-log(j)) / n        with n = number of replies at the time, j = cumulative count of argumentclass(X)
+> MIC(X) = (1-log(j)) / n        with n = number of replies at the time of post X, j = cumulative count of argumentclass(X)
 
 #### 2) Thread Interactivity Score
 
@@ -16,6 +16,9 @@ The full thread receives a single score based on the interactivity detected. Thi
 To provide this, each message receives a cumulative log operator, which differs from the individual log as it increases when the argument is already present. Using this factor, repetition of a single reasoning weighs heavier towards the extreme, either echo chamber or opposition flood.
 This score is the difference between the opposition score (sum of opposition shares calculated on the cumulative log operators) and the echo score (sum of echo shares calculated on the cumulative log operators).
 
+> Echo score = ∀ X with L1(X) = L1(X0),  Σ (j(X)-log(j(X)) / N
+> Opposition score = ∀ Y with L1(Y) != L1(X0),  Σ (j(Y)-log(j(Y)) / N
+> TIS = Opposition score - Echo score
 
 #### 3) Dynamic Thread Interactivity Score
 
