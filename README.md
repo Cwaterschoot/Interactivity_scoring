@@ -16,7 +16,10 @@ This score is the difference between the opposition score (sum of opposition sha
 
 > Echo score = ∀ X with L1(X) = L1(X0):  Σ (j(X)-log(j(X)) / N
 
+A high echo score means large presence of argumentation that stems out of the same camp as the parent message. 
+
 > Opposition score = ∀ Y with L1(Y) != L1(X0):  Σ (j(Y)-log(j(Y)) / N
+
 
 > TIS = Opposition score - Echo score
 
