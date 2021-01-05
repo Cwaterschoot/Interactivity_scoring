@@ -29,7 +29,7 @@ This score is the difference between the opposition score (sum of opposition sha
 Iteratively, each following message receives a individual dynamic TIS. This score equals the TIS at that point in time, which can be used for echo chamber prediction,...
 
 
-![alt text](https://github.com/Cwaterschoot/Interactivity_scoring/blob/main/plot1.png?raw=true)
+![alt text](https://github.com/Cwaterschoot/Interactivity_scoring/blob/main/plots/plot1.png?raw=true)
 
 #### How to:
 
