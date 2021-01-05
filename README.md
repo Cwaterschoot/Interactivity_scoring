@@ -1,6 +1,4 @@
-# Interactivity_scoring
-Interactivity scoring of online threads and messages
-
+# Interactivity scoring of (online) messages containing arguments
 
 Interactivity.py calculates the following indicators:
 
