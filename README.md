@@ -17,7 +17,9 @@ To provide this, each message receives a cumulative log operator, which differs 
 This score is the difference between the opposition score (sum of opposition shares calculated on the cumulative log operators) and the echo score (sum of echo shares calculated on the cumulative log operators).
 
 > Echo score = ∀ X with L1(X) = L1(X0),  Σ (j(X)-log(j(X)) / N
+
 > Opposition score = ∀ Y with L1(Y) != L1(X0),  Σ (j(Y)-log(j(Y)) / N
+
 > TIS = Opposition score - Echo score
 
 #### 3) Dynamic Thread Interactivity Score
