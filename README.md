@@ -28,7 +28,7 @@ A high echo score means large presence of argumentation that stems out of the sa
 #### 3) Dynamic Thread Interactivity Score
 
 Iteratively, each following message receives a individual dynamic TIS. This score equals the TIS at that point in time, which can be used for echo chamber prediction,...
-
+The dynamic TIS is included as a matrix in the output file, alongside the dynamic echo/opposition scores for each post.
 
 ![alt text](https://github.com/Cwaterschoot/Interactivity_scoring/blob/main/Plots/plot1.png)
 
@@ -46,4 +46,7 @@ Defaults:
 
 > python interactivity.py --dataset data/testdf.xlsx --weight 1.1 --level1 argumentation/arg_pro_con.xlsx
 
-
+#### Output:
+* Output.xlsx: a file containing all the created variables and outcomes
+* Written output containing the valuable replies and their argument categories
+* Scatterplots (Plot1 & Plot2) to visualize TIS and MIS (Plot 1) and dynamic echo/opposition scores (Plot 2)
