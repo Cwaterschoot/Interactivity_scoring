@@ -35,6 +35,10 @@ To derive this MIC indicator, the message share at that point in time (m) is cal
 
 The parent message of a thread always receives MIC = 0, as it is not a reply. Similarly, the thread score starts at 0. From the first reply onwards, the score is adjusted with each new reply. Following the TIS formula, opposition arguments will have their message share added to the overall score, the share from echo messages is substracted from the score. The actual message contribution from message (i) is the result from substracting the score at message (i) from the previous comment at time (i-1). The closer this score converges to 0, the smaller the interactive contribution of the message. Naturally, this contribution creeps closely in the ranges around 0 after numerous replies, as most will have been said at that point. Following the formula, negative MIC means that the contribution comes from the echo side, positive MIC stems from a opposite comment.
 
+##### 2.1) Contribution valuation
+
+
+
 #### 3) Dynamic Thread Interactivity Score
 
 Iteratively, each following message receives a individual dynamic TIS. This score equals the TIS at that point in time, which can be used for echo chamber prediction,...
