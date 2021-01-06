@@ -17,11 +17,14 @@ This score is the difference between the opposition score (sum of opposition sha
 
 
 > Echo score
+
 > <img src="https://latex.codecogs.com/gif.latex?\forall&space;x_{n}&space;\mid&space;level1(x_{n})&space;=&space;level1(x_{0}),&space;\sum_{i=0}^{n}&space;\frac{(j(x_{i})-log(j(x_{i}))}{N}" />
 
 A high echo score means large presence of argumentation that stems out of the same camp as the parent message. 
 
-> Opposition score = ∀ X with L1(X) != L1(X0):  Σ (j(X)-log(j(X)) / N
+> Opposition score 
+
+> <img src="https://latex.codecogs.com/gif.latex?\forall&space;x_{n}&space;\mid&space;level1(x_{n})&space;\neq&space;level1(x_{0}),&space;\sum_{i=0}^{n}&space;\frac{(j(x_{i})-log(j(x_{i}))}{N}" />
 
 
 > TIS = Opposition score - Echo score
