@@ -14,11 +14,14 @@ The full thread receives a single score based on the interactivity detected. Thi
 To provide this, each message receives a cumulative log operator, which differs from the individual log as it increases when the argument is already present. Using this factor, repetition of a single reasoning weighs heavier towards the extreme, either echo chamber or opposition flood.
 This score is the difference between the opposition score (sum of opposition shares calculated on the cumulative log operators) and the echo score (sum of echo shares calculated on the cumulative log operators).
 
-> Echo score = ∀ X with L1(X) = L1(X0):  Σ (j(X)-log(j(X)) / N
+
+
+> Echo score
+> <img src="https://latex.codecogs.com/gif.latex?\forall&space;x_{n}&space;\mid&space;level1(x_{n})&space;=&space;level1(x_{0}),&space;\sum_{i=0}^{n}&space;\frac{(j(x_{i})-log(j(x_{i}))}{N}" />
 
 A high echo score means large presence of argumentation that stems out of the same camp as the parent message. 
 
-> Opposition score = ∀ Y with L1(Y) != L1(X0):  Σ (j(Y)-log(j(Y)) / N
+> Opposition score = ∀ X with L1(X) != L1(X0):  Σ (j(X)-log(j(X)) / N
 
 
 > TIS = Opposition score - Echo score
