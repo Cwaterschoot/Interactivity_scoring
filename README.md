@@ -82,3 +82,8 @@ The following replies are valuable (parent message has label 0): [1, 5, 8, 11, 1
 The corresponding arguments to these replies are: ['racist_contemp', 'POC', 'innocent', 'christian', 'racist_hist', 'def_nat', 'racist_contemp'] 
  keeping in mind that the parent reply has the label def_nat
  </blockquote>
+
+
+
+### To do list:
+* Allowance for multiple argument labels per message sample 
