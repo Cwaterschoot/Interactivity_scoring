@@ -29,6 +29,9 @@ A high echo score means large presence of argumentation that stems out of the sa
 
 Individual messages will receive an interactivity score representing the extent that this message at the time of posting contributed to the overall thread score. Simply put, it is the difference between the thread score before the individual message was added and after. Subsequent identical arguments are downgraded by the individual log operator, which decreases the more an already presented argument is added. 
 
+To derive this MIC indicator, the message share at that point in time (m) is calculated using the individual log operator, which, in contrast to the cumulative log used for TIS, decreases as argument X was already prevalent in the discussion. This share equals 1 minus the log of the cumulative count of the argument, i.e. j, divided by the number of arguments in the thread at the point in time of the message (i).
+
+> <img src="https://latex.codecogs.com/gif.latex?\forall&space;x_{i}&space;\mid&space;i>0,&space;m_{i}=&space;\frac{(1-log(x_{i})))}{i}" />
 
 
 #### 3) Dynamic Thread Interactivity Score
