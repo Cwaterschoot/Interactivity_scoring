@@ -1,4 +1,4 @@
-# Interactivity scoring of (online) messages containing arguments
+# Interactivity/diversity scoring of (online) threads containing arguments
 
 Interactivity.py calculates the following indicators:
 
@@ -37,6 +37,7 @@ The parent message of a thread always receives MIC = 0, as it is not a reply. Si
 
 ##### 2.1) Contribution valuation
 
+To determine whether a message is a valuable contribution to the thread in terms of interactivity, the distance between point 0 and the MIC is derived. Message (i) is deemed valuable if distance(MIC(i), 0) > distance(MIC(i-1, 0). An exception exists for the first reply, where the distance is not allowed to be smaller than 0.5, which would mean the reply showcases the same argument as the parent message, which cannot be deemed a valuable contribution to interactivity and argument diversity. 
 
 
 #### 3) Dynamic Thread Interactivity Score
