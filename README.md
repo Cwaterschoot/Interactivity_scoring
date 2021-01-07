@@ -5,6 +5,9 @@
 * Every argument can be assigned either to the 'pro' or 'con' camp in the discussion.
 * The more an argument is repeated, the smaller the contribution a new repetition will make in terms of diversity/interactivity.
 * The more a single argument is repeated, the greater a new repetition will weigh towards the extremes of echo chamber/opposition flood, i.e. constant repeating of identical reasoning will result quicker in an echo chamber or opposition flooding.
+* A thread score below -0.5 is constituted an echo chamber. A thread receiving a score above 0.5 equals opposition flooding.
+
+![alt text](https://github.com/Cwaterschoot/Interactivity_scoring/blob/main/Plots/auxiliary.png)
 
 ________________________________________________________________________________________________________________________________________________
 
