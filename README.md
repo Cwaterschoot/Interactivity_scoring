@@ -1,5 +1,14 @@
 # Interactivity/diversity scoring of (online) threads containing arguments
 
+#### Assumptions for the calculation of interactivity/argument diversity:
+* Each included message from the dataset will portray at least one argument.
+* Every argument can be assigned either to the 'pro' or 'con' camp in the discussion.
+* The more an argument is repeated, the smaller the contribution a new repition will make in terms of diversity/interactivity.
+* The more a single argument is repeated, the greater a new repetition will weigh towards the extremes of echo chamber/opposition flood, i.e. constant repeating of identical reasoning will result quicker in an echo chamber or opposition flooding.
+
+
+
+
 Interactivity.py calculates the following indicators:
 
 
