@@ -24,18 +24,9 @@ This score is the difference between the opposition score (sum of opposition sha
 
 Calculating the log operator for both the echo and opposition scores requires **the cumulative count of the argument (j)** in each message at that point in time. Simply put, this variable equals the n-th iteration of the particular argument represented in the sample at the order given in the dataframe.
 
-> Echo score
+> <img src="https://latex.codecogs.com/gif.latex?Share_{i}\begin{cases}&space;\frac{j(x_{i})-1&space;-&space;log(j(x_{i})-1)}{N}&space;*&space;(-w)&space;&plus;&space;\frac{1}{N}&space;&&space;\text{&space;if&space;}&space;argument(x_{i})=argument(x_{0})&space;\\&space;\frac{j(x_{i})-log(j(x_{i})}{N}&space;&&space;\text{&space;if&space;}&space;argument(x_{i})&space;\ne&space;argument(x_{0})&space;\wedge&space;level1(x_{i})&space;\ne&space;level1(x_{0})\\&space;\frac{j(x_{i})-log(j(x_{i})}{N}&space;*(-1)&space;&&space;\text{&space;if&space;}&space;argument(x_{i})&space;\ne&space;argument(x_{0})&space;\wedge&space;level1(x_{i})&space;=level1(x_{0})&space;\\0&space;&\text{&space;if&space;}&space;i=0\end{cases}" />
 
-> <img src="https://latex.codecogs.com/gif.latex?\forall&space;x_{i}&space;\in&space;thread(X)&space;\mid&space;level1(x_{i})&space;=&space;level1(x_{0}),&space;\sum_{i=0}^{n}&space;\frac{(j(x_{i})-log(j(x_{i}))}{N}" />
-
-A high echo score means large presence of argumentation that stems out of the same camp as the parent message. 
-
-> Opposition score 
-
-> <img src="https://latex.codecogs.com/gif.latex?\forall&space;x_{i}&space;\in&space;thread(X)&space;\mid&space;level1(x_{i})&space;\neq&space;level1(x_{0}),&space;\sum_{i=0}^{n}&space;\frac{(j(x_{i})-log(j(x_{i}))}{N}" />
-
-
-> TIS = Opposition score - Echo score
+> <img src="https://latex.codecogs.com/gif.latex?TIS_{T}&space;=\sum_{i=1}^{N}&space;share_i" />
 
 
 #### 2) Message Interactivity Contribution
