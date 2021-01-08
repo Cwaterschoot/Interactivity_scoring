@@ -37,7 +37,7 @@ To derive this MIC indicator, the message share at that point in time  is calcul
 
 > <img src="https://latex.codecogs.com/gif.latex?MIC_{i}&space;\begin{cases}&space;\frac{(1-log(j(x_{i}))}{i}&space;*&space;(2-w)&&space;\text{&space;if&space;}&space;argument(x_{i})=argument(x_{0})&space;\\&space;\frac{(1-log(j(x_{i}))}{i}&space;&&space;\text{&space;if&space;}&space;argument(x_{i})&space;\ne&space;argument(x_{0})&space;\\&space;0&space;&&space;\text{&space;if&space;}&space;i=0&space;\end{cases}" />
 
-The parent message of a thread always receives MIC = 0, as it is not a reply. Similarly, the thread score starts at 0. From the first reply onwards, the score is adjusted with each new reply. Following the TIS formula, opposition arguments will have their message share added to the overall score, the share from echo messages is substracted from the score. The actual message contribution from message (i) is the result from substracting the score at message (i) from the previous comment at time (i-1). The closer this score converges to 0, the smaller the interactive contribution of the message. Naturally, this contribution creeps closely in the ranges around 0 after numerous replies, as most will have been said at that point. 
+The parent message of a thread always receives MIC = 0, as it is not a reply. Similarly, the thread score starts at 0. From the first reply onwards, the score is adjusted with each new reply. The closer this score converges to zero, the smaller the interactive contribution of the message. Naturally, this contribution creeps closely in the ranges around 0 after numerous replies, as most will have been said at that point. 
 
 ##### 2.1) Contribution valuation
 
