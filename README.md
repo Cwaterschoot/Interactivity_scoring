@@ -52,6 +52,8 @@ To determine whether a message is a valuable contribution to the thread in terms
 Iteratively, each following message receives a individual dynamic TIS. This score equals the TIS at that point in time, which can be used for echo chamber prediction,...
 The dynamic TIS is included as a matrix in the output file, alongside the dynamic echo/opposition scores for each post.
 
+![alt text](https://github.com/Cwaterschoot/Interactivity_scoring/blob/main/Plots/plot-dTIS.png)
+
 
 #### How to:
 
