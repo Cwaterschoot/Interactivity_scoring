@@ -39,6 +39,9 @@ To derive this MIC indicator, the message share at that point in time  is calcul
 
 The parent message of a thread always receives MIC = 0, as it is not a reply. Similarly, the thread score starts at 0. From the first reply onwards, the score is adjusted with each new reply. The closer this score converges to zero, the smaller the interactive contribution of the message. Naturally, this contribution creeps closely in the ranges around 0 after numerous replies, as most will have been said at that point. 
 
+![alt text](https://github.com/Cwaterschoot/Interactivity_scoring/blob/main/Plots/plot-MIC.png)
+
+
 ##### 2.1) Contribution valuation
 
 To determine whether a message is a valuable contribution to the thread in terms of interactivity and argument diversity, the distance between point 0 and the MIC is derived. Message (i) is deemed valuable if distance(MIC(i), 0) > distance(MIC(i-1), 0). An exception exists for the first reply, where the distance is not allowed to be smaller than 0.5, which would mean the reply showcases the same argument as the parent message, which cannot be deemed a valuable contribution to interactivity and argument diversity. 
@@ -49,7 +52,6 @@ To determine whether a message is a valuable contribution to the thread in terms
 Iteratively, each following message receives a individual dynamic TIS. This score equals the TIS at that point in time, which can be used for echo chamber prediction,...
 The dynamic TIS is included as a matrix in the output file, alongside the dynamic echo/opposition scores for each post.
 
-![alt text](https://github.com/Cwaterschoot/Interactivity_scoring/blob/main/Plots/plot1.png)
 
 #### How to:
 
