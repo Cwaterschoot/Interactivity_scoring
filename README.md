@@ -13,7 +13,7 @@ ________________________________________________________________________________
 
 
 
-Interactivity.py calculates the following indicators:
+scoring.py calculates the following indicators:
 
 
 #### 1) Thread Interactivity Score
@@ -67,7 +67,7 @@ Defaults:
 * arg_pro_con.xlsx
 * 1.1
 
-> python interactivity.py --dataset data/testdf.xlsx --weight 1.1 --level1 argumentation/arg_pro_con.xlsx
+> python scoring.py --dataset data/testdf.xlsx --weight 1.1 --level1 argumentation/arg_pro_con.xlsx
 
 #### Output:
 * Output.xlsx: a file containing all the created variables and outcomes
