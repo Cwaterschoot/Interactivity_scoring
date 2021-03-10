@@ -8,9 +8,6 @@ plt.style.use('seaborn-whitegrid')
 # arguments on level 1
 # now called by args
 
-#con = ["racism_contemp", "racism_hist"]
-#pro = ["def_nat", "racial_nat", "childs_party", "not_innate", "not_racist", "POC", "germanic", "imaginary", "christian", "oriental"]
-
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--dataset", default="testdf.xlsx", help = "labelled messages")
