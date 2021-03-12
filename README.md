@@ -11,6 +11,10 @@
 ________________________________________________________________________________________________________________________________________________
 
 
+Arguments:
+  --dataset : labelled discussion threads 
+  --weight : extra weight for repetition of argument in first post
+  --level1 : dataframe consisting of two variables: pro arguments & con arguments
 
 scoring.py calculates the following indicators:
 
