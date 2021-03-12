@@ -20,25 +20,24 @@ Arguments:
 scoring.py calculates the following indicators:
 
 
-#### 1) Thread Interactivity Score
+##### 1) Thread Interactivity Score
 
 The full thread receives a single score based on the interactivity detected. This indicator informs you whether the presented collection of arguments constitutes an echo chamber, opposition flood or a balanced discussion. 
 To provide this, each message receives a cumulative log operator, which differs from the individual log as it increases when the argument is already present. Using this factor, repetition of a single reasoning weighs heavier towards the extreme, either echo chamber or opposition flood.
 This score is the difference between the opposition score (sum of opposition shares calculated on the cumulative log operators) and the echo score (sum of echo shares calculated on the cumulative log operators).
 
 
-#### 2) Message Interactivity Contribution
+##### 2) Message Interactivity Contribution
 
 Individual messages will receive an interactivity score representing the extent that this message at the time of posting contributed to the overall thread score. Simply put, it is the difference between the thread score before the individual message was added and after. Subsequent identical arguments are downgraded by the individual log operator, which decreases the more an already presented argument is added. 
-
-
-##### 2.1) Interactive contribution
 
 To determine whether a message is an interactive contribution to the thread in terms of interactivity and argument diversity, the current MIC value of the post (i) is compared to that one of the previous comment (i-1). Replies with a greater MIC value than the previous post are deemed interactive. An exception exists for the first reply, where MIC is not allowed to be smaller than 0.5, which would mean the reply showcases the same argument as the parent message, which cannot be deemed a valuable contribution to interactivity and argument diversity. 
 
 
-#### 3) Dynamic Thread Interactivity Score
+##### 3) Dynamic Thread Interactivity Score
 
 Iteratively, each following message receives a individual dynamic TIS. This score equals the TIS at that point in time, which can be used for echo chamber prediction,...
 The dynamic TIS is included as a matrix in the output file.
+
+Data scraped using PRAW (https://github.com/praw-dev/praw), Twitter API and Garc (https://github.com/ChrisStevens/garc).
 
